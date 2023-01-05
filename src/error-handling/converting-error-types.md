@@ -1,12 +1,15 @@
 # Converting Error Types
 
-The effective expansion of `?` is a little more complicated than previously indicated:
+`?`의 효과적인 적용은 좀 더 복잡하긴 합니다:
+> The effective expansion of `?` is a little more complicated than previously indicated:
 
 ```rust,ignore
 expression?
 ```
 
-works the same as
+위 표현은 아래와 같습니다.
+> works the same as
+
 
 ```rust,ignore
 match expression {
