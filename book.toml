@@ -19,8 +19,8 @@ additional-js = ["ga4.js",
 additional-css = ["svgbob.css", 
 # "speaker-notes.css"
 ]
-git-repository-url = "https://github.com/google/comprehensive-rust"
-edit-url-template = "https://github.com/google/comprehensive-rust/edit/main/{path}"
+git-repository-url = "https://github.com/keispace/comprehensive-rust-kr"
+edit-url-template = "https://github.com/keispace/comprehensive-rust-kr/edit/main/{path}"
 
 [output.html.fold]
 enable = true
