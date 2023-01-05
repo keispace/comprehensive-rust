@@ -13,8 +13,12 @@ class = "bob"
 
 [output.html]
 curly-quotes = true
-additional-js = ["ga4.js", "speaker-notes.js"]
-additional-css = ["svgbob.css", "speaker-notes.css"]
+additional-js = ["ga4.js", 
+# "speaker-notes.js"
+]
+additional-css = ["svgbob.css", 
+# "speaker-notes.css"
+]
 git-repository-url = "https://github.com/google/comprehensive-rust"
 edit-url-template = "https://github.com/google/comprehensive-rust/edit/main/{path}"
 
@@ -24,3 +28,4 @@ level = 0
 
 [output.html.playground]
 editable = true
+[preprocessor.presentation-preprocessor]
