@@ -1,8 +1,8 @@
 # Adding Context to Errors
 
-[anyhow](https://docs.rs/anyhow/) 크레이트는 오류에 대한 상황정보를 추가하기 위해 널리 사용됩니다: 
-> The widely used [anyhow](https://docs.rs/anyhow/) crate can help you add
-> contextual information to your errors:
+The widely used [anyhow](https://docs.rs/anyhow/) crate can help you add
+contextual information to your errors and allows you to have fewer
+custom error types:
 
 ```rust,editable,compile_fail
 use std::{fs, io};
@@ -12,8 +12,6 @@ use anyhow::{Context, Result};
 
 #[derive(Error, Debug)]
 enum ReadUsernameError {
-    #[error("Could not read: {0}")]
-    IoError(#[from] io::Error),
     #[error("Found no username in {0}")]
     EmptyUsername(String),
 }
