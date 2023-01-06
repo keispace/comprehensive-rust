@@ -1,8 +1,8 @@
 # Structured Error Handling with `Result`
 
 `Result` enum은 흔히 오류를 예상되는 경우 사용됩니다: 
-We have already seen the `Result` enum. This is used pervasively when errors are
-expected as part of normal operation:
+> We have already seen the `Result` enum. This is used pervasively when errors are
+> expected as part of normal operation:
 
 ```rust
 use std::fs::File;
