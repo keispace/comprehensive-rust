@@ -44,7 +44,6 @@
 fn main() {}
 ```
 
-
 ---
 역주
 - 구현체의 +(Add), -(Sub)까지 구현하게 만들었는데 난이도가 꽤 높습니다
@@ -53,7 +52,7 @@ fn main() {}
 <details>
 <summary>힌트- 포인트 연산 함수, shape from 함수</summary>
 
-```rust
+```rust, compile_fail
 impl std::ops::Add for Point {
     type Output = Self;
 

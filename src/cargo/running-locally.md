@@ -25,43 +25,43 @@ of the examples in this training:
 2. shell에서 `cargo new exercise`를 입력해서 새로운 `exercise/` 폴더를 만듭니다.
 > 2. Use `cargo new exercise` to create a new `exercise/` directory for your code:
 
-    ```shell
+```shell
     $ cargo new exercise
          Created binary (application) `exercise` package
-    ```
+```
 
 3. `exercise/` 폴더로 이동한 후, `cargo run` 커맨드로 코드를 실행합니다.
 > 3. Navigate into `exercise/` and use `cargo run` to build and run your binary:
 
-    ```shell
+```shell
     $ cd exercise
     $ cargo run
        Compiling exercise v0.1.0 (/home/mgeisler/tmp/exercise)
         Finished dev [unoptimized + debuginfo] target(s) in 0.75s
          Running `target/debug/exercise`
     Hello, world!
-    ```
+```
 
 4. 보일러플레이트 코드는 `src/main.rs`에 작성합니다. 예를 들어 이전 페이지의 소스를 아래와 같이 `src/main.rs`에 작성합니다.
 > 4. Replace the boiler-plate code in `src/main.rs` with your own code. For
    example, using the example on the previous page, make `src/main.rs` look like
 
-    ```rust
+```rust
     fn main() {
         println!("Edit me!");
     }
-    ```
+```
 
 5. `cargo run`커맨드로 소스를 빌드하고 실행합니다.
 > 5. Use `cargo run` to build and run your updated binary:
 
-    ```shell
+```shell
     $ cargo run
        Compiling exercise v0.1.0 (/home/mgeisler/tmp/exercise)
         Finished dev [unoptimized + debuginfo] target(s) in 0.24s
          Running `target/debug/exercise`
     Edit me!
-    ```
+```
 
 6. `cargo check`커맨드는 빠르게 당신의 프로젝트에서 에러를 확인할 수 있습니다. 
     - `cargo build`는 실행없이 소스를 컴파일 합니다. 이 경우에 `target/debug/`폴더에서 output을 확인 할 수 있습니다. 
