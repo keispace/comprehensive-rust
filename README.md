@@ -72,17 +72,15 @@ $ mdbook serve
 
 질문이나 의견이 있다면 [Martin Geisler](mailto:mgeisler@google.com)에게 연락을 주시거나 
 [discussion on GitHub](https://github.com/google/comprehensive-rust/discussions)에 남겨주세요.
+* 번역에 대해서는 이 저장소에 PR이나 issue 달아주시면 반영하겠습니다. 
 
 > For questions or comments, please contact [Martin Geisler](mailto:mgeisler@google.com) or start a [discussion on GitHub](https://github.com/google/comprehensive-rust/discussions). We would love to hear from you.
 
 ---
 ## 역자주
 스터디 겸 해서 저장소 fork후 번역을 시작했습니다.
-mdbook search 기능이 한국어를 지원하지 않아서 찾아봤는데 아직 러스트 실력이 미천해서 mdbook에서 한국어 지원하도록 PR 보낼 수가 없네요(...) 그래서 검색용 영어와 병기해서 번역 합니다.
-
-4일차 오후 강의는 안드로이드 OS에 대한 부분인데 안드로이드 지식이 없어서 되려 이해에 방해 될거 같아서 미번역 or 천천히 번역할 예정입니다.
-
-순서는 [Welcome to Comprehensive Rust 🦀](src/welcome.md)부터 시작하는데 해당 문서의 mdbook을 serve해서 보시거나 본 페이지 [인터넷북](https://keispace.github.io/comprehensive-rust-kr)에서 보시길 추천합니다.(next prev 이동 편의)
+mdbook search 기능이 한국어를 지원하지 않아서 찾아봤는데 아직 러스트 실력이 미천해서 mdbook에서 한국어 지원하도록 PR 보낼 수가 없네요(...) 그래서 검색용 원문을 병기합니다.
+- 구글 원본 쪽에 한국어 번역 서포트로 제공했습니다 일단 번역기능을 mdbook에 추가하기 위해 진행중인데 완료가 되면 거기 병합될지도?..
 
 ## history
 - 1차 완료 파트
