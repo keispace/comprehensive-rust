@@ -11,7 +11,6 @@
 
 
 > **참고:** `// ANCHOR: label`과  `// ANCHOR_END: label` 주석은 문제를 구성하기 위한 메타 주석으로 무시하시면 됩니다.
-
 > > **Note:** Please ignore the `// ANCHOR: label` and `// ANCHOR_END: label`
 > > comments you see in the solutions. They are there to make it possible to
 > > re-use parts of the solutions as the exercises.

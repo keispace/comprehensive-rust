@@ -1,6 +1,6 @@
 # Dereferencing Raw Pointers
 
-포인트 생성은 안전합니다. 하지만 해제는 `unsafe`가 필요합니다:
+포인트 생성은 안전합니다. 하지만 역참조할 경우 `unsafe`가 필요합니다:
 > Creating pointers is safe, but dereferencing them requires `unsafe`:
 
 ```rust,editable

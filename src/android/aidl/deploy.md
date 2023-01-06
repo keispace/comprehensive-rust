@@ -1,19 +1,22 @@
 # Deploy
 
-We can now build, push, and start the service:
+서비스를 빌드, 푸시, 시작 할 수 있습니다:
+> We can now build, push, and start the service:
 
 ```shell
 {{#include ../build_all.sh:birthday_server}}
 ```
 
-In another terminal, check that the service runs:
+다른 터미널에서 서비스 구동을 확인합니다:
+> In another terminal, check that the service runs:
 
 ```shell
 {{#include ../build_all.sh:service_check_birthday_server}}
 Service birthdayservice: found
 ```
 
-You can also call the service with `service call`:
+`service call`로 서비스를 호출할 수도 있습니다:
+> You can also call the service with `service call`:
 
 ```shell
 $ {{#include ../build_all.sh:service_call_birthday_server}}

@@ -1,7 +1,8 @@
 # Logging
 
-You should use the `log` crate to automatically log to `logcat` (on-device) or
-`stdout` (on-host):
+`log`크레이트를 사용하여 `logcat`(장치)나 `stdout`(호스트)에서 자동으로 로그를 기록하도록 합니다:
+> You should use the `log` crate to automatically log to `logcat` (on-device) or
+> `stdout` (on-host):
 
 _hello_rust_logs/Android.bp_:
 
@@ -15,13 +16,15 @@ _hello_rust_logs/src/main.rs_:
 {{#include logging/src/main.rs:main}}
 ```
 
-Build, push, and run the binary on your device:
+장치에서 바이너리를 빌드, 푸시, 실행합니다:
+> Build, push, and run the binary on your device:
 
 ```shell
 {{#include build_all.sh:hello_rust_logs}}
 ```
 
-The logs show up in `adb logcat`:
+`adb logcat`커맨드로 로그를 확인합니다:
+> The logs show up in `adb logcat`:
 
 ```shell
 $ adb logcat -s rust

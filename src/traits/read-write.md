@@ -1,7 +1,7 @@
 # `Read` and `Write`
 
 `Read`와 `BufRead`를 사용하면 `u8` 소스로부터 읽을 수 있습니다:
-Using `Read` and `BufRead`, you can abstract over `u8` sources:
+> Using `Read` and `BufRead`, you can abstract over `u8` sources:
 
 ```rust,editable
 use std::io::{BufRead, BufReader, Read, Result};

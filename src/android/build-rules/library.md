@@ -33,6 +33,7 @@ _hello_rust/src/lib.rs_:
 {{#include library/src/lib.rs:greeting}}
 ```
 
+이제 이전과 같이 바이너리를 빌드, 푸시, 실행할 수 있습니다:
 You build, push, and run the binary like before:
 
 ```shell

@@ -18,8 +18,7 @@ void foo(size_t n) {
 }
 ```
 
-만약`malloc` 과 `free` 사이에서 함수가 먼저 반환되면 메모리 누수가 일어납니다.
-
+만약`malloc` 과 `free` 사이에서 함수가 먼저 반환되면 메모리 누수가 일어납니다.  
 : 포인터가 손실되어 메모리 할당을 해제할 수 없게 됩니다.
 > Memory is leaked if the function returns early between `malloc` and `free`: the
 > pointer is lost and we cannot deallocate the memory.

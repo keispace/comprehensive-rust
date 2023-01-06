@@ -1,8 +1,7 @@
 # Modules
 
-We have seen how `impl` blocks let us namespace functions to a type.
 
-`mod` 역시 네임스페이스 타입과 함수를 제공합니다: 
+`impl`블록은 네임스페이스함수를 타입으로 제공합니다. `mod` 역시 네임스페이스 타입과 함수를 제공합니다: 
 > We have seen how `impl` blocks let us namespace functions to a type.
 > Similarly, `mod` lets us namespace types and functions:
 

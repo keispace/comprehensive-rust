@@ -1,6 +1,7 @@
 # Calling Rust
 
-Exporting Rust functions and types to C is easy:
+러스트에서 타입과 함수를 C로 내보내는 것은 간단합니다: 
+> Exporting Rust functions and types to C is easy:
 
 _interoperability/rust/libanalyze/analyze.rs_
 
@@ -20,7 +21,8 @@ _interoperability/rust/libanalyze/Android.bp_
 {{#include rust/libanalyze/Android.bp}}
 ```
 
-We can now call this from a C binary:
+이제 C바이너리에서 호출할 수 있습니다: 
+> We can now call this from a C binary:
 
 _interoperability/rust/analyze/main.c_
 
@@ -34,8 +36,8 @@ _interoperability/rust/analyze/Android.bp_
 {{#include rust/analyze/Android.bp}}
 ```
 
-
-Build, push, and run the binary on your device:
+장치에서 바이너리를 빌드, 푸시, 실행해봅니다: 
+> Build, push, and run the binary on your device:
 
 ```shell
 {{#include ../../build_all.sh:analyze_numbers}}

@@ -1,7 +1,7 @@
 # Unions
 
 유니온타입은 열거형(enum)과 같지만 직접 활성 필드를 추척해야 합니다:
-Unions are like enums, but you need to track the active field yourself:
+> Unions are like enums, but you need to track the active field yourself:
 
 ```rust,editable
 #[repr(C)]
