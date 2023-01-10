@@ -79,6 +79,17 @@ of the examples in this training:
 
 [1]: https://doc.rust-lang.org/book/ch01-01-installation.html
 
+<details>
+<summary>강의 참조 노트</summary>
+
+강의 참여자들이 카고를 설치하고 로컬 편집기를 이용하는 것을 추천합니다. 
+이 편이 좀 더 정상적인 개발환경을 갖출 수 있습니다.
+
+> Try to encourage the class participants to install Cargo and use a
+> local editor. It will make their life easier since they will have a
+> normal development environment.
+
+</details>
 
 ---
 역주: 

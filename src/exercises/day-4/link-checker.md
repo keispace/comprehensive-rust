@@ -15,7 +15,7 @@
 ```shell
 $ cargo new link-checker
 $ cd link-checker
-$ cargo add --features blocking reqwest
+$ cargo add --features blocking, rustls-tls reqwest
 ```
 > 만일 `cargo add` 커맨드가 `error: no such subcommand` 로 실패한다면 
 > `Cargo.toml` 파일을 직접 수정해도 됩니다. 아래에 전체 종속성 내용이 있습니다.
@@ -42,7 +42,7 @@ $ cargo add thiserror
 ```toml
 # 실습 시 버전은 다를 수 있습니다.
 [dependencies]
-reqwest = { version = "0.11.12", features = ["blocking"] }
+reqwest = { version = "0.11.12", features = ["blocking", "rustls-tls"] }
 scraper = "0.13.0"
 thiserror = "1.0.37"
 ```
@@ -75,10 +75,6 @@ fn main() {
 ```shell
 $ cargo run
 ```
-
-> 만약 `cargo run`이 OpenSSL을 언급하며 오류가 발생한다면 `sudo apt install libssl-dev`커맨드를 실행해서 OpenSSL 헤더를 설치해봅니다.
-> > If `cargo run` fails with an error mentioning OpenSSL, ensure that you have
-> > the OpenSSL headers installed by running `sudo apt install libssl-dev`.
 
 ## Tasks
 

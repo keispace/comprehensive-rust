@@ -11,7 +11,7 @@ days:
 > * Day 1: Basic Rust, ownership and the borrow checker.
 > * Day 2: Compound data types,  pattern matching, the standard library.
 > * Day 3: Traits and generics, error handling, testing, unsafe Rust.
-> * Day 4: Concurrency in Rust and interoperatibilty with other languages
+> * Day 4: Concurrency in Rust and interoperability with other languages
 
 > **4일차의 연습**: 러스트 프로젝트에서 C/C++로 작성된 코드를 이전해서 연결하려고 한다면 종속성이 적을 수록 좋습니다. 코드를 구문분석하는 것이 이상적입니다.
 >> **Exercise for Day 4:** Do you interface with some C/C++ code in your project
