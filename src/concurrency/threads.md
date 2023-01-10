@@ -29,6 +29,32 @@ fn main() {
 > * Thread panics are independent of each other.
 >   * Panics can carry a payload, which can be unpacked with `downcast_ref`.
 
+<details>
+<summary>강의 참조 노트</summary>
+
+키포인트: 
+* 주 스레드가 기다리지 않기 때문에 생성된 스레드의 for문은 10까지 가지 않습니다.
+* 만약 주 스레드가 스레드 동작을 대기 하기 원한다면 `let handle = thread::spawn(...)`으로 스레드를 선언한 후 `handle.join()`로 연결하여 사용합니다.
+* 스레드에서 유발된 패닉(for 강제 종료)이 주 스레드에는 영향이 없음을 확인하시기 바랍니다.
+* `handle.join()`사용시 `Result` 반환값을 통해 패닉 페이로드에 접근할 수 있습니다. [`Any`]를 참조하시기 바랍니다.
+
+> Key points:
+> 
+> * Notice that the thread is stopped before it reaches 10 — the main thread is
+>   not waiting.
+> 
+> * Use `let handle = thread::spawn(...)` and later `handle.join()` to wait for
+>   the thread to finish.
+> 
+> * Trigger a panic in the thread, notice how this doesn't affect `main`.
+> 
+> * Use the `Result` return value from `handle.join()` to get access to the panic
+>   payload. This is a good time to talk about [`Any`].
+
+[`Any`]: https://doc.rust-lang.org/std/any/index.html
+
+</details>
+
 ---
 역주
 

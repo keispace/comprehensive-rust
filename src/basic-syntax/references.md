@@ -16,11 +16,15 @@ fn main() {
 C++과의 차이점:
 * C포인터와 유사하게 `ref_x`에 할당할 경우 참조를 해제해야 합니다. 
 * 러스트는 특정한 경우(메서드 호출)에 자동으로 참조 해제를 합니다.
+* `mut`로 선언된 참조는 수명에 따라 다른 값으로 할당될 수 있습니다.
+
 > Some differences from C++:
 > 
 > * We must dereference `ref_x` when assigning to it, similar to C pointers,
 > * Rust will auto-dereference in some cases, in particular when invoking
 >   methods (try `count_ones`).
+> * References that are declared as `mut` can be bound to different values over their lifetime.
+
 
 ---
 역주 

@@ -61,3 +61,20 @@
 만일 당신이 동적 타입 언어(Python이나 JavaScript)로 프로그래밍 하는 방법을 알고 있다면 잘 따라올 수 있을 것입니다. 
 > If you know how to program in a dynamically typed language such as Python or
 > JavaScript, then you will be able to follow along just fine too.
+
+<details>
+<summary>강의 참조 노트</summary>
+
+이것은 _speaker note_의 예제입니다. 이 부분을 이용해서 추가 정보를 제공합니다. 
+주로 강의실에서 제기되는 일반적인 질문에 대한 답변과 강사가 다루어야 할 주요 요점일 수 있습니다. 
+
+> This is an example of a _speaker note_. We will use these to add additional
+> information to the slides. This could be key points which the instructor should
+> cover as well as answers to typical questions which come up in class.
+
+--- 
+역주 
+
+*  해당기능은 새 창으로 노트 부분을 따로 띄우는 ppt 발표용 프레젠테이션과 유사한 기능입니다만  역주에서 일부 hint 등으로접기 기능을 사용하고 있어서 원문의 _speaker note_ 기능은 의도적으로 꺼 높은 상태입니다.
+* 접기 제목(summary)으로 `강의 참조 노트`라고 된 부분이 해당 발표자료입니다. 
+</details>

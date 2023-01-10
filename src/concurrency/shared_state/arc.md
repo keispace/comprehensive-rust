@@ -23,5 +23,4 @@ fn main() {
 }
 ```
 
-
 [1]: https://doc.rust-lang.org/std/sync/struct.Arc.html

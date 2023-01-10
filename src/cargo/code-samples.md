@@ -23,6 +23,27 @@ fn main() {
 코드 블록에 포커스를 두고 <kbd>Ctrl-Enter</kbd>를 눌러 실행해 볼 수 있습니다. 
 > You can use <kbd>Ctrl-Enter</kbd> to execute the code when focus is in the text box.
 
+<details>
+<summary>강의 참조 노트</summary>
+
+강의에서 대부분의 코드 샘플은 위와 같이 수정할수 있지만 일부 코드는 다음과 같은 이유로 수정할 수 없습니다: 
+
+* 유닛 테스트는 내장 플레이그라운드에서 실행이 안됩니다. 외부 플레이그라운드 사이트에 붙여넣어 테스트를 실행하시기 바랍니다.
+* 페이지에서 이동하면 내장된 플레이그라운드는 state를 잃습니다. 따라서 로컬 환경이나 외부 플레이그라운드 사이트에서 연습문제를 해결하는 것이 좋습니다.
+
+> Most code samples are editable like shown above. A few code samples
+> are not editable for various reasons:
+> 
+> * The embedded playgrounds cannot execute unit tests. Copy-paste the
+>   code and open it in the real Playground to demonstrate unit tests.
+> 
+> * The embedded playgrounds lose their state the moment you navigate
+>   away from the page! This is the reason that the students should
+>   solve the exercises using a local Rust installation or via the
+>   Playground.
+
+</details>
+
 ---
 역주:
 - 저런 블록들은 [과정 사이트](https://google.github.io/comprehensive-rust/cargo/code-samples.html)에서 실행됩니다. 

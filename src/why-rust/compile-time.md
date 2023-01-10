@@ -1,18 +1,19 @@
 # Compile Time Guarantees
 
 컴파일 시 정적 메모리 관리:
-> Static memory management at compile time:
 
 * 초기화되지 않는 변수가 없습니다.
-* *거의* 없는 메모리 누수[^leaks].
+* 메모리 누수 없음(_거의_. 강의참조노트 참고.)
 * 메모리 이중 해제는 안됩니다. 
 * 메모리 해제 후 사용 안됩니다.
 * `NULL`포인터는 없습니다.
 * 잠긴 뮤텍스를 잊을 수 없습니다.
 * 스레드간 데이터레이스가 없습니다. 
 * 이터레이터(반복자, iterator) 무효화가 없습니다.
+
+> Static memory management at compile time:
 > * No uninitialized variables.
-> * *Mostly* no memory leaks[^leaks].
+> * No memory leaks (_mostly_, see notes).
 > * No double-frees.
 > * No use-after-free.
 > * No `NULL` pointers.
@@ -20,8 +21,35 @@
 > * No data races between threads.
 > * No iterator invalidation.
 
-[^leaks]: 기술적으로는 (안전한) 러스트에서 메모리 누수를 만드는 것이 가능합니다. [`Box::leak`](https://doc.rust-lang.org/std/boxed/struct.Box.html#method.leak)메서드를 사용하면 destructor를 실행하지 않고 [`Box`](https://doc.rust-lang.org/std/boxed/struct.Box.html)의 원시 참조를 가져온 후 삭제할 수 있습니다. 이를 사용하면 런타임 초기화 및 런타임 크기의 정적 변수를 얻을 수 있습니다. 또는 단순히 'std:mem::forget' 함수를 사용하면 소멸자가 실행되지 않음을 의미하는 값에 대해 컴파일러가 "잊게"됩니다. 안전한 러스트에서 누수을 생성하는 다른 방법은 여러 가지가 있지만, 본 코스의 목적상 "메모리 누수 없음"은 "매우 *우발적인* 메모리 누수 없음"으로 이해해야 합니다.
-> [^leaks]: It is technically possible to produce a memory leak in (safe) Rust. The [`Box::leak`](https://doc.rust-lang.org/std/boxed/struct.Box.html#method.leak) method allows getting a raw reference out of a [`Box`](https://doc.rust-lang.org/std/boxed/struct.Box.html) and dropping the [`Box`](https://doc.rust-lang.org/std/boxed/struct.Box.html) afterwards, without running the destructor. A use of this could be to get runtime-initialized and runtime-sized static variables. Or simply, the [`std::mem::forget`](https://doc.rust-lang.org/std/mem/fn.forget.html) function, which makes the compiler "forget" about a value meaning the destructor is never run. There are many other ways to create leaks in safe Rust, but for the purpose of this course, "No memory leaks" should be understood as "Pretty much no *accidental* memory leaks".
+<details>
+<summary>강의 참조 노트</summary>
+
+안전한 러스트에서도 메모리 누수가 발생하는 몇가지 예는 다음과 같습니다:
+
+* [`Box::leak`]을 사용하여 런타임 초기화 및 런타임 크기 정적 변수를 가져올 수 있습니다. 이를 통해 포인터 누수를 발생시킬 수 있습니다. 
+* [`std::mem::forget`]을 사용하여 컴파일러가 값에 대해 "잊도록" 만들 수 있습니다(소멸자가 실행되지 않음을 의미합니다).
+* `Rc` 또는 `Arc`를 사용하여 실수로 [reference cycle]을 생성할 수도 있습니다.
+
+본 코스에서는 "메모리 누출 없음"을 "우발적인 메모리 누출 없음"으로 이해해야 합니다.
+
+> It is possible to produce memory leaks in (safe) Rust. Some examples
+are:
+> 
+> * You can for use [`Box::leak`] to leak a pointer. A use of this could
+>   be to get runtime-initialized and runtime-sized static variables
+> * You can use [`std::mem::forget`] to make the compiler "forget" about
+>   a value (meaning the destructor is never run).
+> * You can also accidentally create a [reference cycle] with `Rc` or
+>   `Arc`.
+> 
+> For the purpose of this course, "No memory leaks" should be understood
+> as "Pretty much no *accidental* memory leaks".
+
+[`Box::leak`]: https://doc.rust-lang.org/std/boxed/struct.Box.html#method.leak
+[`std::mem::forget`]: https://doc.rust-lang.org/std/mem/fn.forget.html
+[reference cycle]: https://doc.rust-lang.org/book/ch15-06-reference-cycles.html
+
+</details>
 
 ---
 역자주

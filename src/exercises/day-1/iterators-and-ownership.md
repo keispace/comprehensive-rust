@@ -124,7 +124,7 @@ fn main() {
 
 위 코드에서 실험 해 본 후 다음 문서를 참조해서 답변을 확인하시기 바랍니다.
   * [`impl IntoIterator for &Vec<T>`](https://doc.rust-lang.org/std/vec/struct.Vec.html#impl-IntoIterator-for-%26%27a%20Vec%3CT%2C%20A%3E)
-  * [`impl IntoIterator for Vec<T>`](https://doc.rust-lang.org/std/vec/struct.Vec.html#impl-IntoIterator-for-Vec%3CT%2C%20A%3E)
+  * [`impl IntoIterator for Vec<T>`](https://doc.rust-lang.org/std/vec/struct.Vec.html#impl-IntoIterator-for-%26%27a%20Vec%3CT%2C%20A%3E)
 > Experiment with the code above and then consult the documentation for [`impl
 > IntoIterator for
 > &Vec<T>`](https://doc.rust-lang.org/std/vec/struct.Vec.html#impl-IntoIterator-2)
