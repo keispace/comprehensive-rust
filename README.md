@@ -9,6 +9,13 @@ Comprehensive Rust 🦀의 한국 번역을 호스트한 저장소입니다.
 최종적으로 번역이 완료되면 사이트 호스트 수정 예정입니다.
 
 
+23-01-10 기준 병행 번역본 링크 
+https://keispace.github.io/comprehensive-rust-kr/
+
+
+
+---
+
 This repository hosted the Korean translation of Comprehensive Rust 🦀.
 
 The changes have been merged into the upstream repository.
