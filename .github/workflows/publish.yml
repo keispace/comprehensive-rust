@@ -3,7 +3,7 @@ name: Publish
 on:
   push:
     branches:
-      - achived_main
+      - main
   workflow_dispatch:
 
 permissions:
