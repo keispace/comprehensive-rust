@@ -17,6 +17,8 @@ https://keispace.github.io/comprehensive-rust-kr/
 - 23-01-27 전체 번역 초안PR: https://github.com/google/comprehensive-rust/pull/290
 
 
+## 초벌 번역 기여한 한국어 공식 코스 주소 입니다. 
+https://google.github.io/comprehensive-rust/ko/
 
 ---
 
